@@ -1,0 +1,24 @@
+.Logo-center {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    padding: 50px 25px;
+}
+
+.Logo-center img {
+    padding: 10px;
+}
+
+.Content-container {
+    padding: 3px;
+}
+
+.Content-container h2 {
+    color: #f46541;
+}
+
+.Content-container h3 {
+    color: #1472ec;
+}
+
