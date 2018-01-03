@@ -15,4 +15,9 @@
   .trigger:hover {
     color: #1890ff;
   }
+
+  .customize_card {
+    margin-top: 15px;
+    width: 312
+  }
   

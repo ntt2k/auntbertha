@@ -125,7 +125,7 @@ class Dashboard extends Component {
               <Row gutter={40}>
               <Col xs={{span: 24}} sm={{span: 24}} md={{span: 8}} >
                 <Card
-                  style={{ width: 312 }}
+                  className="customize_card"
                   cover={<img alt="example" src={example_map} />}
                   
                 >
@@ -140,7 +140,7 @@ class Dashboard extends Component {
               </Col>
               <Col xs={{span: 24}} sm={{span: 24}} md={{span: 8}} >
                 <Card
-                  style={{ width: 312 }}
+                  className="customize_card"
                   cover={<img alt="example" src={example_map} />}
                   
                 >
@@ -155,7 +155,7 @@ class Dashboard extends Component {
               </Col>
               <Col xs={{span: 24}} sm={{span: 24}} md={{span: 8}} >
                 <Card
-                  style={{ width: 312 }}
+                  className="customize_card"
                   cover={<img alt="example" src={example_map} />}
                   
                 >
