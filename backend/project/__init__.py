@@ -19,11 +19,11 @@ class Zipcode(db.Model):
     __tablename__ = "zipcode"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     zipcode = db.Column(db.String(5), nullable=False)
-    testdata = db.Column(db.String(1000))
+    data = db.Column(db.String(1000))
 
     def __init__(self, zipcode, data):
         self.zipcode = zipcode
-        self.testdata = data
+        self.data = data
 
 
 # routes
@@ -33,3 +33,17 @@ def ping_pong():
         'status': 'success',
         'message': 'pong!'
     })
+
+@app.route('/zipcode/<zipcode>', methods=['GET'])
+def get_data(zipcode):
+    """Get data for one zipcode"""
+    result = Zipcode.query.filter_by(zipcode=zipcode).first_or_404()
+    response_object = {
+        'status': 'success',
+        'data': {
+            'id': result.id,
+            'zipcode': result.zipcode,
+            'data': result.data
+        }
+    }
+    return jsonify(response_object), 200
