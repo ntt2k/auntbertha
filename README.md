@@ -21,7 +21,5 @@ yarn start
 
 
 
-![Screenshot](./screenshot/firstpage.png)
-![Screenshot](./screenshot/dashboard.png)
-![Screenshot](./screenshot/firstpage_mobile.png){:height="50%" width="50%"}
-![Screenshot](./screenshot/dashboard_mobile.png){:height="50%" width="50%"}
+![Screenshot](./frontend/screenshot/firstpage.png)
+![Screenshot](./frontend/screenshot/dashboard.png)
