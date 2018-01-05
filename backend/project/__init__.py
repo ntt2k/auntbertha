@@ -1,11 +1,18 @@
 import os
 import datetime
 from flask import Flask, jsonify
+from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
+# Remote Debug setup
+# import ptvsd
+# ptvsd.enable_attach("my_secret", address = ('0.0.0.0', 4000))
+# ptvsd.wait_for_attach()
+# ptvsd.break_into_debugger()
 
 # instantiate the app
 app = Flask(__name__)
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # set config
 app_settings = os.getenv('APP_SETTINGS')
@@ -34,7 +41,7 @@ def ping_pong():
         'message': 'pong!'
     })
 
-@app.route('/zipcode/<zipcode>', methods=['GET'])
+@app.route('/api/zipcode/<zipcode>', methods=['GET'])
 def get_data(zipcode):
     """Get data for one zipcode"""
     result = Zipcode.query.filter_by(zipcode=zipcode).first_or_404()

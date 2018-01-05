@@ -9,6 +9,7 @@ services:
     volumes:
       - './backend:/app'
     ports:
+      - 4000:4000
       - 5001:5000
     environment:
       - APP_SETTINGS=project.config.DevelopmentConfig
