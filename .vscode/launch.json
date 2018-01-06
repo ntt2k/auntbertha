@@ -24,10 +24,10 @@
             "type": "python",
             "request": "attach",
             "localRoot": "/Users/ntt2k/projects/javascript/auntbertha/backend",
-            "remoteRoot": "/app/backend",
+            "remoteRoot": "/app",
             "port": 4000,
             "secret": "my_secret",
-            "host": "192.168.99.100"
+            "host": "localhost"
         },
         {
             "name": "Python: Terminal (integrated)",
