@@ -16,8 +16,8 @@ yarn start
 - [ ] *TODO: Implement google_map_reacts into existence card web component (in process)
 
 #### Back-end:
-- [ ] Implement back-end to capture direct live data from [auntbertha.com](http://auntbertha.com "auntbertha.com")
-- [x] Implement Python back-end services + containerize application with Docker (completed)
+- [ ] *TODO: Implement back-end to capture direct live data from [auntbertha.com](http://auntbertha.com "auntbertha.com")
+- [ ] *TODO: Implement Python back-end services + containerize application with Docker (completed)
 
 
 
