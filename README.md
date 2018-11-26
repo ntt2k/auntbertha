@@ -17,7 +17,7 @@ yarn start
 
 #### Back-end:
 - [ ] *TODO: Implement back-end to capture direct live data from [auntbertha.com](http://auntbertha.com "auntbertha.com")
-- [ ] *TODO: Implement Python back-end services + containerize application with Docker (completed)
+- [ ] *TODO: Implement Python back-end services + containerize application with Docker
 
 
 
